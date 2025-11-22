@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BaltaLietuviai — Oficiali komanda</title>
+  <meta name="description" content="BaltaLietuviai — oficialus krepšinio klubas. Naujienos, tvarkaraštis, žaidėjai, bilietai ir shopas.">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    /* Modern NBA-like single-file styling */
+    :root{--max:1200px;--primary:#0b2a66;--accent:#ffd400;--muted:#9aa3b2}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;color:#0b213f;background:#f4f7fb}
+    .container{max-width:var(--max);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ff9f1c);display:flex;align-items:center;justify-content:center;font-weight:800;color:#0b2a66}
+    nav a{margin-left:18px;text-decoration:none;color:var(--primary);font-weight:600}
+    .hero{display:flex;gap:28px;align-items:center;margin-top:22px}
+    .hero-left{flex:1}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:#e8f0ff;color:var(--primary);font-weight:700;margin-bottom:10px}
+    h1{margin:0;font-size:2.1rem}
+    p.lead{color:var(--muted);margin-top:8px;font-size:1.05rem}
+    .cta{margin-top:16px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;text-decoration:none;background:var(--primary);color:#fff;font-weight:700;margin-right:10px}
+    .btn.alt{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+    .hero-right{width:420px}
+    .card{background:#fff;border-radius:14px;padding:14px;box-shadow:0 8px 30px rgba(12,28,56,0.08)}
+
+    /* Roster grid */
+    section{margin-top:28px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .player{display:flex;gap:12px;align-items:center}
+    .player .photo{width:84px;height:84px;border-radius:10px;background-size:cover;background-position:center}
+    .player h4{margin:0;font-size:1.05rem}
+    .player p{margin:4px 0 0 0;color:var(--muted);font-size:.95rem}
+
+    /* Schedule table */
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}
+    th,td{padding:12px 14px;text-align:left;border-bottom:1px solid #f1f5fa}
+    th{background:#f7fbff;color:var(--muted);font-weight:700}
+
+    footer{margin-top:36px;color:var(--muted);font-size:.9rem;padding:18px 0}
+
+    @media (max-width:900px){.hero{flex-direction:column}.hero-right{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">BL</div>
+        <div>
+          <div style="font-weight:800;color:var(--primary)">BaltaLietuviai</div>
+          <div style="font-size:.85rem;color:var(--muted)">Oficialus komandos puslapis</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#news">Naujienos</a>
+        <a href="#roster">Sudėtis</a>
+        <a href="#schedule">Tvarkaraštis</a>
+        <a href="#tickets">Bilietai</a>
+        <a href="#shop">Shop</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <div class="kicker">SEZONAS 2025/26</div>
+          <h1>BaltaLietuviai — Oficialiai kaip NBA</h1>
+          <p class="lead">Profesionali komanda, aistra krepšiniui, modernus žaidimo stilius. Sek mus, bilietus pirkti ir palaikyk savo miestą.</p>
+          <div class="cta">
+            <a class="btn" href="#tickets">Pirkti bilietus</a>
+            <a class="btn alt" href="#roster">Peržiūrėti sudėtį</a>
+          </div>
+          <div style="margin-top:14px;color:var(--muted)">Sek mus: <strong>@Baltalietuviai</strong> (Instagram · TikTok · X)</div>
+        </div>
+
+        <aside class="hero-right">
+          <div class="card">
+            <h3 style="margin:0 0 8px 0">Artimiausios rungtynės</h3>
+            <div style="font-weight:700">2025-11-30 · vs Vilniaus Vėjas · Arena Baltupiai · 19:00</div>
+            <div style="margin-top:10px;color:var(--muted)">Bilietai nuo 8€ · VIP paketai riboti</div>
+            <div style="margin-top:12px">
+              <a class="btn" href="#tickets">Pirkti dabar</a>
+            </div>
+          </div>
+
+          <div style="height:12px"></div>
+
+          <div class="card">
+            <h4 style="margin:0 0 8px 0">Komandos naujiena</h4>
+            <p style="margin:0;color:var(--muted)">Sezono pradžia: pristatome naują pagrindinį trenerį Donatą Petrauską.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="news">
+        <h2>Naujienos</h2>
+        <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+          <article class="card">
+            <h3>Pristatytas naujas trečiasis marškinėlis</h3>
+            <p class="meta">2025-11-10 · Design by Airė</p>
+            <p style="color:var(--muted)">Ribotas leidimas su Baltų simbolika. Pardavimai nuo 20€.</p>
+          </article>
+
+          <article class="card">
+            <h3>Jaunimo akademija: registracija atidaryta</h3>
+            <p class="meta">2025-10-25</p>
+            <p style="color:var(--muted)">Jaunimo treniruotės 8–16 metų vaikams. Ribotas vietų skaičius.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="roster">
+        <h2>Sudėtis</h2>
+        <div class="grid">
+          <!-- Player 1 -->
+          <div class="card player">
+            <div class="photo" style="background-image:url('https://placehold.co/400x400?text=Player+1')"></div>
+            <div>
+              <h4>#7 Lukas "Blitz" Petrauskas</h4>
+              <p>Gynėjas · 190 cm · 27 m.</p>
+              <p style="color:var(--muted);margin-top:6px">Šį sezoną vid. 18.4 taš. · 5.2 rez.</p>
+            </div>
+          </div>
+
+          <!-- Player 2 -->
+          <div class="card player">
+            <div class="photo" style="background-image:url('https://placehold.co/400x400?text=Player+2')"></div>
+            <div>
+              <h4>#12 Mantas "Sargas" Janulis</h4>
+              <p>Puolėjas · 205 cm · 30 m.</p>
+              <p style="color:var(--muted);margin-top:6px">Vid. 12.1 taš. · 7.8 atk.</p>
+            </div>
+          </div>
+
+          <!-- Player 3 -->
+          <div class="card player">
+            <div class="photo" style="background-image:url('https://placehold.co/400x400?text=Player+3')"></div>
+            <div>
+              <h4>#33 Tomas "Raketa" Vainoras</h4>
+              <p>Centras · 212 cm · 28 m.</p>
+              <p style="color:var(--muted);margin-top:6px">Vid. 10.6 taš. · 9.4 atk.</p>
+            </div>
+          </div>
+
+          <!-- Player 4 -->
+          <div class="card player">
+            <div class="photo" style="background-image:url('https://placehold.co/400x400?text=Player+4')"></div>
+            <div>
+              <h4>#3 Domas "Flash" Laurinaitis</h4>
+              <p>Gynėjas · 185 cm · 22 m.</p>
+              <p style="color:var(--muted);margin-top:6px">Vid. 6.2 taš. · 4.1 rez.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule">
+        <h2>Tvarkaraštis</h2>
+        <div class="card">
+          <table>
+            <thead><tr><th>Data</th><th>Priešininkas</th><th>Vieta</th><th>Laikas</th><th>Bilietai</th></tr></thead>
+            <tbody>
+              <tr><td>2025-11-30</td><td>Vilniaus Vėjas</td><td>Arena Baltupiai</td><td>19:00</td><td><a href="#tickets">Pirkti</a></td></tr>
+              <tr><td>2025-12-07</td><td>Kauno Kariai</td><td>Kauno Sporto Arena</td><td>18:00</td><td><a href="#tickets">Pirkti</a></td></tr>
+              <tr><td>2025-12-14</td><td>Šiaulių Žaibas</td><td>Arena Baltupiai</td><td>19:30</td><td><a href="#tickets">Pirkti</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="tickets">
+        <h2>Bilietai</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Standartas</h3>
+            <p class="meta">8€ – Tribūnos</p>
+            <p style="color:var(--muted)">Puiki vieta palaikyti komandą.</p>
+          </div>
+
+          <div class="card">
+            <h3>VIP</h3>
+            <p class="meta">35€ – VIP zona + susitikimas</p>
+            <p style="color:var(--muted)">Ribotas kiekis, įsigyk anksti.</p>
+          </div>
+
+          <div class="card">
+            <h3>Season Pass</h3>
+            <p class="meta">120€ – Visos namų rungtynės</p>
+            <p style="color:var(--muted)">Geriau kaina už visą sezoną.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop">
+        <h2>Official Shop</h2>
+        <div class="grid">
+          <div class="card">
+            <div style="height:160px;background-image:url('https://placehold.co/600x400?text=Merch+1');background-size:cover;border-radius:8px"></div>
+            <h4 style="margin-top:10px">Baltos marškinėliai</h4>
+            <p class="meta">20€ · Limited</p>
+            <a class="btn" href="#">Pirkti</a>
+          </div>
+
+          <div class="card">
+            <div style="height:160px;background-image:url('https://placehold.co/600x400?text=Merch+2');background-size:cover;border-radius:8px"></div>
+            <h4 style="margin-top:10px">Skarelė & Kepurė</h4>
+            <p class="meta">15€</p>
+            <a class="btn" href="#">Pirkti</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="margin-top:26px">
+        <h2>Kontaktai</h2>
+        <div class="card">
+          <p style="margin:0 0 8px 0">El. paštas: <strong>info@baltalietuviai.lt</strong></p>
+          <p style="margin:0">TV: +370 600 00000 · Adresas: Arena Baltupiai, Didlaukio g. 27, Vilnius</p>
+        </div>
+      </section>
+
+      <footer>
+        <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center">
+          <div>© <span id="year"></span> BaltaLietuviai — Visos teisės saugomos.</div>
+          <div style="color:var(--muted)">Sukurta: Airė · GitHub Pages ready</div>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <script>
+    document.get
